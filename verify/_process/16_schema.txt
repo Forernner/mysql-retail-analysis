@@ -1,0 +1,29 @@
+mysql: [Warning] Using a password on the command line interface can be insecure.
+*************************** 1. row ***************************
+       Table: retail_clean
+Create Table: CREATE TABLE `retail_clean` (
+  `invoice` varchar(20) NOT NULL,
+  `stock_code` varchar(20) NOT NULL,
+  `description` varchar(200) DEFAULT NULL,
+  `quantity` int NOT NULL,
+  `invoice_date` datetime NOT NULL,
+  `unit_price` decimal(10,4) NOT NULL,
+  `customer_id` int NOT NULL,
+  `country` varchar(60) NOT NULL,
+  `amount` decimal(16,4) NOT NULL COMMENT '派生列 = quantity * unit_price',
+  KEY `ix_date` (`invoice_date`),
+  KEY `ix_cust` (`customer_id`)
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4 COLLATE=utf8mb4_0900_ai_ci
++--------------+-----------+
+| COLUMN_NAME  | DATA_TYPE |
++--------------+-----------+
+| invoice      | varchar   |
+| stock_code   | varchar   |
+| description  | varchar   |
+| quantity     | int       |
+| invoice_date | datetime  |
+| unit_price   | decimal   |
+| customer_id  | int       |
+| country      | varchar   |
+| amount       | decimal   |
++--------------+-----------+

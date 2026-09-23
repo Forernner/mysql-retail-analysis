@@ -1,0 +1,61 @@
+mysql: [Warning] Using a password on the command line interface can be insecure.
++-------------------+
+| s                 |
++-------------------+
+| === 库列表 ===    |
++-------------------+
++--------------------+
+| Database           |
++--------------------+
+| information_schema |
+| mysql              |
+| performance_schema |
+| practice           |
+| retail             |
+| sys                |
++--------------------+
++----------------------------+
+| s                          |
++----------------------------+
+| === practice 里的表 ===    |
++----------------------------+
++------------------------------+------------+
+| TABLE_NAME                   | TABLE_ROWS |
++------------------------------+------------+
+| online_retail_year_2009_2010 |     525461 |
+| online_retail_year_2010_2011 |     541910 |
+| retail_raw                   |    1056072 |
++------------------------------+------------+
++-------------------+
+| s                 |
++-------------------+
+| === 列信息 ===    |
++-------------------+
++------------------------------+-----+--------------+---------------+-------------+
+| TABLE_NAME                   | pos | COLUMN_NAME  | COLUMN_TYPE   | IS_NULLABLE |
++------------------------------+-----+--------------+---------------+-------------+
+| online_retail_year_2009_2010 |   1 | invoice      | varchar(20)   | YES         |
+| online_retail_year_2009_2010 |   2 | stock_code   | varchar(20)   | YES         |
+| online_retail_year_2009_2010 |   3 | description  | varchar(200)  | YES         |
+| online_retail_year_2009_2010 |   4 | quantity     | int           | YES         |
+| online_retail_year_2009_2010 |   5 | invoice_date | datetime      | YES         |
+| online_retail_year_2009_2010 |   6 | unit_price   | decimal(10,4) | YES         |
+| online_retail_year_2009_2010 |   7 | customer_id  | int           | YES         |
+| online_retail_year_2009_2010 |   8 | country      | varchar(60)   | YES         |
+| online_retail_year_2010_2011 |   1 | invoice      | varchar(20)   | YES         |
+| online_retail_year_2010_2011 |   2 | stock_code   | varchar(20)   | YES         |
+| online_retail_year_2010_2011 |   3 | description  | varchar(200)  | YES         |
+| online_retail_year_2010_2011 |   4 | quantity     | int           | YES         |
+| online_retail_year_2010_2011 |   5 | invoice_date | datetime      | YES         |
+| online_retail_year_2010_2011 |   6 | unit_price   | decimal(10,4) | YES         |
+| online_retail_year_2010_2011 |   7 | customer_id  | int           | YES         |
+| online_retail_year_2010_2011 |   8 | country      | varchar(60)   | YES         |
+| retail_raw                   |   1 | invoice      | varchar(20)   | YES         |
+| retail_raw                   |   2 | stock_code   | varchar(20)   | YES         |
+| retail_raw                   |   3 | description  | varchar(200)  | YES         |
+| retail_raw                   |   4 | quantity     | int           | YES         |
+| retail_raw                   |   5 | invoice_date | datetime      | YES         |
+| retail_raw                   |   6 | unit_price   | decimal(10,4) | YES         |
+| retail_raw                   |   7 | customer_id  | int           | YES         |
+| retail_raw                   |   8 | country      | varchar(60)   | YES         |
++------------------------------+-----+--------------+---------------+-------------+

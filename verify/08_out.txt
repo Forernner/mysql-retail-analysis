@@ -1,0 +1,66 @@
+mysql: [Warning] Using a password on the command line interface can be insecure.
+C.S1.rows	525461
+C.S1.uniq_rows	518596
+C.S1.inv	28816
+C.S1.item	4481
+C.S1.cust	4383
+C.S1.country	40
+C.S1.dmin	2009-12-01 07:45:00
+C.S1.dmax	2010-12-09 20:01:00
+C.S2.rows	541910
+C.S2.uniq_rows	536642
+C.S2.inv	25900
+C.S2.item	3958
+C.S2.cust	4372
+C.S2.country	38
+C.S2.dmin	2010-12-01 08:26:00
+C.S2.dmax	2011-12-09 12:50:00
+C.raw.rows	1067371
+C.raw.uniq_rows	1033036
+C.raw.uniq_inv	53628
+C.raw.uniq_item	5132
+C.raw.uniq_cust	5942
+C.raw.uniq_country	43
+C.raw.dup_total	34335
+C.dup_sheet1	6865
+C.dup_sheet2	5268
+C.dup_groups	32907
+C.inv_both	1088
+C.neg_qty	22950
+C.zero_qty	0
+C.price_le0	6207
+C.price_eq0	6202
+C.price_lt0	5
+C.cancel	19494
+C.cancel_neg	19493
+C.cancel_pos	1
+C.cancel_zero	0
+C.cancel_nocust	750
+C.noncancel_neg	3457
+C.a_inv	6
+C.no_cust	243007
+C.bad_union	261822
+C.bad_sum_simple	291658
+C.amount_raw_all	19287250.57
+C.amount_filtered_nodup	17743429.18
+C.amount_guest	3229165.39
+C.amount_cancel	-1526667.86
+C.q16s0	1067371
+C.q16s1	1047877
+C.q16s2	1044420
+C.q16s3	805620
+C.q16s4	805549
+C.q16s5	779425
+C.clean.rows	779425
+C.clean.amount	17374804.27
+C.clean.inv	36969
+C.clean.item	4631
+C.clean.cust	5878
+C.clean.country	41
+D.desc_ne_trim	213035
+D.desc_lead_space	2624
+D.desc_trail_space	0
+D.desc_pad_eq	0
+D.collation_test	NO PAD(<>)
+D.desc_null	4382
+D.collation_of_col	utf8mb4_0900_ai_ci

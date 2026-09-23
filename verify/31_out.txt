@@ -1,0 +1,19 @@
+mysql: [Warning] Using a password on the command line interface can be insecure.
++--------+
+| 版本   |
++--------+
+| 8.0.46 |
++--------+
+=== 变体1：无别名 + 无 LIMIT ===
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1248 (42000) at line 1: Every derived table must have its own alias
+=== 变体2：无别名 + Navicat 那样的 LIMIT 0,1000 ===
+mysql: [Warning] Using a password on the command line interface can be insecure.
+ERROR 1248 (42000) at line 1: Every derived table must have its own alias
+=== 变体3：有别名 + LIMIT ===
+mysql: [Warning] Using a password on the command line interface can be insecure.
++-----------------------+
+| 完全去重后行数        |
++-----------------------+
+|               1033036 |
++-----------------------+

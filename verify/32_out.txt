@@ -1,0 +1,53 @@
+mysql: [Warning] Using a password on the command line interface can be insecure.
++-------------+
+| 变体        |
++-------------+
+| A 无别名    |
++-------------+
+ERROR 1248 (42000) at line 3: Every derived table must have its own alias
++------------------+
+| 变体             |
++------------------+
+| B 少了型号 *     |
++------------------+
+ERROR 1064 (42000) at line 6: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'FROM retail_raw)' at line 1
++----------------------+
+| 变体                 |
++----------------------+
+| C 多一个左括号       |
++----------------------+
+ERROR 1248 (42000) at line 9: Every derived table must have its own alias
++----------------------+
+| 变体                 |
++----------------------+
+| D 多一个右括号       |
++----------------------+
+ERROR 1248 (42000) at line 12: Every derived table must have its own alias
++------------------------------+
+| 变体                         |
++------------------------------+
+| E FROM 与括号间无空格        |
++------------------------------+
+ERROR 1248 (42000) at line 15: Every derived table must have its own alias
++-------------------+
+| 变体              |
++-------------------+
+| F 全角左括号      |
++-------------------+
+ERROR 1064 (42000) at line 18: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DISTINCT * FROM retail_raw)' at line 1
++-----------------------+
+| 变体                  |
++-----------------------+
+| G 内层少了 SELECT     |
++-----------------------+
+ERROR 1064 (42000) at line 21: You have an error in your SQL syntax; check the manual that corresponds to your MySQL server version for the right syntax to use near 'DISTINCT * FROM retail_raw)' at line 1
++----------------+
+| 变体           |
++----------------+
+| H 正确写法     |
++----------------+
++---------+
+| n       |
++---------+
+| 1033036 |
++---------+

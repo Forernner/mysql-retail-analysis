@@ -1,0 +1,9 @@
+mysql: [Warning] Using a password on the command line interface can be insecure.
++----+-----------------+-------+------------------------+----------------------------------------------------------------------+
+| id | user            | time  | state                  | q                                                                    |
++----+-----------------+-------+------------------------+----------------------------------------------------------------------+
+|  5 | event_scheduler | 29691 | Waiting on empty queue | NULL                                                                 |
+| 63 | root            |   805 | executing              | SELECT DATEDIFF(MAX(d1), MIN(d2)) + 1 AS 重叠天数 FROM
+  (SELECT     |
+| 64 | root            |     0 | executing              | SELECT id, user, time, state, LEFT(info,60) AS q FROM inform         |
++----+-----------------+-------+------------------------+----------------------------------------------------------------------+
